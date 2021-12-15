@@ -1,2 +1,4 @@
 ECOMMERCE_BASE_URL='http://{{ ECOMMERCE_HOST }}:8130'
+{% if MFE_HOST is defined %}
 ORDER_HISTORY_URL='http://{{ MFE_HOST }}:{{ ECOMMERCE_MFE_APP['port'] }}/{{ ECOMMERCE_MFE_APP['name'] }}/orders'
+{% endif %}
