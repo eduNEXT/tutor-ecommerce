@@ -87,6 +87,7 @@ config = {
 hooks = {
     "build-image": {
         "ecommerce": "{{ ECOMMERCE_DOCKER_IMAGE }}",
+        "ecommerce-dev": "{{ ECOMMERCE_DOCKER_IMAGE_DEV }}",
         "ecommerce-worker": "{{ ECOMMERCE_WORKER_DOCKER_IMAGE }}",
     },
     "remote-image": {
